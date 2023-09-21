@@ -1,0 +1,17 @@
+<script>
+    $(document).ready(function() {
+        $('.log').first().removeClass('op-5')
+    })
+    
+</script>
+
+<h2 class="header">User activity</h2>
+{{#if persons.length}}
+    <ul class="overflowed">
+        {{#each persons}}
+        <li class="log op-5">{{person}}, last seen {{date.date}}.{{date.month}}.{{date.year}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>No net activity yet</p>
+{{/if}}

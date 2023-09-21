@@ -1,0 +1,21 @@
+{{> head}}
+
+<body>
+  {{> navbar}}
+
+  <div class="wrapper">
+    <div class="container">
+      {{{ body }}}
+    </div>
+  </div>
+
+  <script>
+    var h = $(window).height()
+    if ($('.container').height() > $(window).height() - 100) {
+      $('.wrapper').css('height', h-64)
+      $('.wrapper').addClass('scrollbared')
+    }
+  </script>
+</body>
+
+</html>

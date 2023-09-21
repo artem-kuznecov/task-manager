@@ -1,0 +1,38 @@
+@import url('./todo.css');
+
+body, .wrapper, .container {
+  width: 100%;
+  padding: 0;
+  margin: 0
+}
+
+.scrollbared {
+  overflow-y:scroll;
+}
+
+.scrollbared::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: lightgrey;
+  margin: 20px 0px 20px 0px;
+
+}
+
+.scrollbared::-webkit-scrollbar{
+	width: 12px;
+	background-color: transparent;
+}
+
+.scrollbared::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #727272;
+}
+
+.container {
+  width: 80% !important;
+  margin-left: 10%;
+  max-width: 100000px !important; /* * меняем materialize css */
+}
+
+.op-5 {
+  opacity: 0.5;
+}
